@@ -3,6 +3,7 @@
 }
 function onDeviceReady(){
     alert('Device is now ready');
+    app.initialize();
 }
 
 var app = {
