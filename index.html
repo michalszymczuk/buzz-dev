@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <title>test title</title>
-  <script type="text/javascript" src="cordova.js"></script>
-  <script type="text/javascript" src="PushNotification.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
+  <script>
+    function onLoad(){
+      document.addEventListener("deviceready", onDeviceReady, true);
+    }
+    function onDeviceReady(){
+      navigator.notification.alert("PhoneGap is working!!");
+    }
+  </script>
   </head>
 <body onload="onLoad();">
   <header>Buzz-dev!</header>
@@ -16,6 +21,8 @@
     test text2<br/>
     test text3<br/>
   </div>
-
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="PushNotification.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
