@@ -2,3 +2,18 @@ body {
   background-color: #000000;
   color: #cccccc;
 }
+header{
+  top:0; left:0;
+  height:45px;
+  background-color:#deb500;
+  padding:0;
+  position:absolute;
+  z-index:2;
+  font-size:20px;
+  width:100%;
+  text-align:center;
+  color:#f3f3f3;
+  font-weight:bold;
+  text-shadow:0 -1px 0 rgba(0,0,0,0.5);
+  line-height:45px;
+}
