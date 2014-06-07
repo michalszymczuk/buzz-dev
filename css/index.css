@@ -1,19 +1,43 @@
 body {
   background-color: #000000;
-  color: #cccccc;
+  color: #ffffff;
 }
 header{
   top:0; left:0;
   height:45px;
-  background-color:#deb500;
+  background-color:#333333;
   padding:0;
   position:absolute;
   z-index:2;
   font-size:20px;
   width:100%;
   text-align:center;
-  color:#f3f3f3;
+  color:#996699;
   font-weight:bold;
   text-shadow:0 -1px 0 rgba(0,0,0,0.5);
   line-height:45px;
+}
+#main-content {
+  position:absolute;
+  top:45px;
+  z-index:1;
+  aawidth:100%;
+  padding:0.1em;
+}
+
+
+<!-- fading - not used, just saved here for future use --> 
+.in, .out { 
+  -webkit-animation-timing-function: ease-in-out; 
+  -webkit-animation-duration: 400ms;
+}
+@-webkit-keyframes fade-in { 
+  from { opacity: 0; } to { opacity: 1; }
+}
+.fade.in { 
+  -webkit-animation-name: fade-in; 
+  z-index: 5;
+}  
+.fade.out {
+  z-index: 0;
 }
