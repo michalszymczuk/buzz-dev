@@ -3,4 +3,5 @@
  }
  function onDeviceReady(){
       navigator.notification.alert("PhoneGap is working!!");
+      alert("test alert");
  }
