@@ -1,7 +1,16 @@
-﻿ function onLoad(){
-      document.addEventListener("deviceready", onDeviceReady, true);
- }
- function onDeviceReady(){
-      navigator.notification.alert("PhoneGap is working!!");
-      alert("test alert");
- }
+﻿window.onload = function () {
+    alert("test");
+};
+$(document).ready(function () {
+
+    alert("test2");
+});
+
+document.addEventListener("deviceready", "OnDeviceReady", false);   
+
+function OnDeviceReady()
+{
+    alert("test3");
+    document.getElementById("test").innerHTML = "hello world";
+
+}
