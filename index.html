@@ -9,22 +9,22 @@
   <script type="text/javascript" src="PushNotification.js"></script>
   <!-- <script type="text/javascript" src="js/index.js"></script> --> 
   <script type="text/javascript" charset="utf-8">
-    function onLoad(){
-      document.addEventListener("deviceready", onDeviceReady, true);
-    }
     function onDeviceReady(){
       navigator.notification.alert("PhoneGap is working!!");
       alert("test alert1");
     }
+    function onLoad(){
+      document.addEventListener("deviceready", onDeviceReady, true);
+    }
   </script>
   </head>
-<body onload="onDeviceReady();">
+<body onload="onLoad();">
   <header>Buzz-dev!</header>
   <div id=main-content>
     test text1<br/>
     test text2<br/>
     test text3<br/>
-    działa??
+    działa?? słabo ęóąśłżźćń
   </div>
 
 </body>
