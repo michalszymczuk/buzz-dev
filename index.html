@@ -8,8 +8,19 @@
   <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
   <script type="text/javascript" src="PushNotification.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
+  <script>
+    function onLoad()
+    {
+        document.addEventListener('deviceready', onDeviceReady, false);
+    }
+    function onDeviceReady()
+    {
+        // do nothing
+        alert('Device is now ready');
+    }
+  </script>
 </head>
-<body>
+<body onload="onLoad()">
   <header>Buzz-dev!</header>
   <div id=main-content>
     test text1<br/>

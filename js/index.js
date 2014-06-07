@@ -1,16 +1,9 @@
-﻿window.onload = function () {
-    alert("test");
-};
-$(document).ready(function () {
-
-    alert("test2");
-});
-
-document.addEventListener("deviceready", "OnDeviceReady", false);   
-
-function OnDeviceReady()
+﻿function onLoad()
 {
-    alert("test3");
-    document.getElementById("test").innerHTML = "hello world";
-
+    document.addEventListener('deviceready', onDeviceReady, false);
+}
+function onDeviceReady()
+{
+    // do nothing
+    alert('Device is now ready');
 }
